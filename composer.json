@@ -1,0 +1,18 @@
+{
+    "name": "schnittstabil/phpunit-starter",
+    "description": "Starts phpunit with my opinionated phpunit.xml.dist",
+    "license": "MIT",
+    "keywords": ["config", "phpunit"],
+    "authors": [
+        {
+            "name": "Michael Mayer",
+            "email": "michael@schnittstabil.de"
+        }
+    ],
+    "bin": [
+        "schnittstabil-phpunit-starter"
+    ],
+    "require": {
+        "phpunit/phpunit": "^5.2"
+    }
+}
