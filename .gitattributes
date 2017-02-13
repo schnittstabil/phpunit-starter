@@ -1,5 +1,6 @@
 * text=auto eol=lf
 
+src/                   export-ignore
 tests/                 export-ignore
 .editorconfig          export-ignore
 .codeclimate.yml       export-ignore

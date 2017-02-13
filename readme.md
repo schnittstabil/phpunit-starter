@@ -1,4 +1,4 @@
-# schnittstabil/phpunit-starter
+# schnittstabil/phpunit-starter [![Build Status](https://travis-ci.org/schnittstabil/phpunit-starter.svg?branch=master)](https://travis-ci.org/schnittstabil/phpunit-starter)
 
 > Starts phpunit with my opinionated phpunit.xml.dist.
 
