@@ -29,10 +29,23 @@ unset($file);
 
 require PHPUNIT_COMPOSER_INSTALL;
 
+$bootstrap = '';
+foreach ([
+    getcwd().'/tests/bootstrap.php',
+    getcwd().'/vendor/autoload.php',
+    ] as $file) {
+
+    if (file_exists($file)) {
+        $bootstrap = '--bootstrap='.$file;
+
+        break;
+    }
+}
+
 $_SERVER['argv'] = [
     $_SERVER['argv'][0],
     '--configuration='.__DIR__.'/phpunit.xml.dist',
-    '--bootstrap='.getcwd().'/vendor/autoload.php',
+    $bootstrap,
     '--coverage-html='.getcwd().'/build/coverage',
     '--coverage-clover='.getcwd().'/build/logs/clover.xml',
     '--whitelist='.getcwd().'/src',
