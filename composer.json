@@ -13,7 +13,7 @@
         "schnittstabil-phpunit-starter"
     ],
     "require": {
-        "phpunit/phpunit": "^5.2|^6.0"
+        "phpunit/phpunit": "^5.2 || ^6.0 || ^7.0"
     },
     "scripts": {
         "test": [
